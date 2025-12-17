@@ -13,7 +13,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="" class="nav__logo"><i class="ri-steering-fill"></i>Qhaway Placapp© by GuilleBiker™<img src="https://flagcdn.com/pe.svg" width="30" alt="Perú"></a>
+            <a href="" class="nav__logo"><i class="ri-steering-fill"></i>Qhaway Placapp©<img src="https://flagcdn.com/pe.svg" width="30" alt="Perú"></a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -279,11 +279,28 @@
         <section class="featured section" id="featured">
             <h2 class="section__title">Servicios de Consulta en Perú <img src="https://flagcdn.com/pe.svg" width="30" alt="Perú"></h2>
             <div class="featured__container container">
-                <div class="featured__content grid">
-                    
 
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item active-featured" data-filter="all"><span>Todos</span></button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".sunarp">Sunarp</button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".soat">SOAT</button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".mtc">MTC</button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".policia">Policia</button>
+                    </li>
+                </ul>
+
+                <div class="featured__content grid">
                     <a href="https://consultavehicular.sunarp.gob.pe/consulta-vehicular" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Super Intendencia Nacional de los registros Publicos</h1>
                         <h3 class="featured__subtitle">Consulta Vehicular Gratuita: Datos básicos (propietario, número de serie, motor, color).</h3>
@@ -295,7 +312,7 @@
                     </article></a>
 
                     <a href="https://www.soat.com.pe/servicios-soat/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix soat">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Asociacion Peruana de Empresas de Seguros</h1>
                         <h3 class="featured__subtitle">Consulta de SOAT Vigente (APESEG): Permite saber si el seguro obligatorio contra accidentes está activo y con qué aseguradora.</h3>
@@ -306,8 +323,20 @@
                         </button>
                     </article></a>
 
+                    <a href="https://servicios.sbs.gob.pe/reportesoat/BusquedaPlaca" target="_blank">
+                    <article class="featured__card mix soat">
+                        <div class="shape shape__smaller"></div>
+                        <h1 class="featured__title">Superintendencia de Banca, Seguros  AFP</h1>
+                        <h3 class="featured__subtitle">Reporte SOAT / CAT y Seguro Vehicular: Consulta la siniestralidad (chocques o accidentes) por placa.</h3>
+                        <img src="https://servicios.sbs.gob.pe/reportesoat/Images/logo.jpg" alt="" class="featured__img">
+                        <h3 class="featured__price">Reporte Sinistralidad</h3>
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article></a>
+
                     <a href="https://www.placas.pe/#/home/verificarEstadoPlaca" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix policia">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">PLACA ÚNICA NACIONAL DE RODAJE</h1>
                         <h3 class="featured__subtitle">Consulta Estado de Placas: Para saber si el vehículo está en proceso de transferencia de propiedad o cambio de placas.</h3>
@@ -320,7 +349,7 @@
                     </article></a>
 
                     <a href="https://www.sat.gob.pe/VirtualSAT/principal.aspx?mysession=sF9zfctzdQsVjwxNOCeZvxdY2M%2b5n5tmYrzV7QTM7rk%3d" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Servicio de Administracion Tributaria</h1>
                         <h3 class="featured__subtitle">SAT de Lima (Papeletas): Consulta de multas de tránsito y transporte en la jurisdicción de Lima Metropolitana.</h3>
@@ -332,7 +361,7 @@
                     </article></a>
 
                     <a href="https://sigueloplus.sunarp.gob.pe/siguelo/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SUNARP</h1>
                         <h3 class="featured__subtitle">Consulta de Títulos en Trámite: Para saber si el vehículo está en proceso de transferencia de propiedad o cambio de motor.</h3>
@@ -344,7 +373,7 @@
                     </article></a>
 
                     <a href="https://conoce-aqui.sunarp.gob.pe/conoce-aqui/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SUNARP</h1>
                         <h3 class="featured__subtitle">Conoce Aquí (Visualización de Partida): Para revisar si el vehículo tiene gravámenes, embargos o hipotecas vigentes.</h3>
@@ -356,7 +385,7 @@
                     </article></a>
 
                     <a href="https://www.sat.gob.pe/VirtualSAT/modulos/Capturas.aspx?mysession=" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SAT LIMA</h1>
                         <h3 class="featured__subtitle">SAT - Captura Vehicular: Verifica si el auto tiene una orden de captura por deudas tributarias o multas sin pagar.</h3>
@@ -368,7 +397,7 @@
                     </article></a>
 
                     <a href="https://www.sutran.gob.pe/consultas/record-de-infracciones/record-de-infracciones/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix mtc">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SUTRAN</h1>
                         <h3 class="featured__subtitle">SUTRAN (Infracciones en Carreteras): Consulta de fotopapeletas por exceso de velocidad en carreteras nacionales</h3>
@@ -380,7 +409,7 @@
                     </article></a>
 
                     <a href="https://webexterno.sutran.gob.pe/WebExterno/Pages/frmPapeletasCinemometro.aspx" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix mtc">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SUTRAN</h1>
                         <h3 class="featured__subtitle">Papeletas de Infracción por Cinemómetro</h3>
@@ -392,7 +421,7 @@
                     </article></a>
 
                     <a href="https://satt.gob.pe/servicios/record-de-infracciones" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SATT TRUJILLO</h1>
                         <h3 class="featured__subtitle">Servicio de Administracion Tributaria Trujillo</h3>
@@ -404,7 +433,7 @@
                     </article></a>
 
                     <a href="http://www.pit.gob.pe/pit2007/EstadoCuenta.aspx" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix policia">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">PIT (Papeletas de Provincias)</h1>
                         <h3 class="featured__subtitle">PIT (Papeletas de Provincias): Algunos municipios vinculan sus deudas aquí.</h3>
@@ -416,7 +445,7 @@
                     </article></a>
 
                     <a href="https://www.sat.gob.pe/VirtualSAT/modulos/pitazo/Default.aspx" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">SAT LIMA</h1>
                         <h3 class="featured__subtitle">ALERTA PITAZO - PREVENTIVO E INFORMATIVO: Sólo registre su número de celular y la placa del vehículo del cual desea información. Mediante mensaje de texto recibirá: Registro de una nueva multa de tránsito en la placa inscrita. Aviso de Orden de Captura por la placa inscrita. Actualización de placas inscritas.</h3>
@@ -428,7 +457,7 @@
                     </article></a>
 
                     <a href="https://rec.mtc.gob.pe/Citv/ArConsultaCitv" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix mtc">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Consulta de Revisiones Técnicas (MTC)</h1>
                         <h3 class="featured__subtitle">Consulta de Revisiones Técnicas (MTC): Verifica si el certificado de Inspección Técnica Vehicular (CITV) está vigente.</h3>
@@ -441,7 +470,7 @@
                     </article></a>
 
                     <a href="https://infogas.com.pe/consulta-placa/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix mtc">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Certificado de Placa (Infogas)</h1>
                         <h3 class="featured__subtitle">Certificado de Placa (Infogas): Si el auto usa GNV o GLP, aquí se consulta si las certificaciones anuales de gas están al día.</h3>
@@ -453,7 +482,7 @@
                     </article></a>
 
                     <a href="https://sistemas1.policia.gob.pe/ConsultaPVR/ConsultarServicio" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix policia">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">PORTAL DE CONSULTAS AL CIUDADANO PARA PLACAS DE VEHÍCULOS CON REQUISITORIAS</h1>
                         <h3 class="featured__subtitle">Consulta de Vehículos Robados (PNP): Aunque muchas veces se integra en la consulta de SUNARP, la página de la Policía Nacional permite denuncias y verificaciones específicas.</h3>
@@ -465,7 +494,7 @@
                     </article></a>
 
                     <a href="https://alertarobo.sunarp.gob.pe/alerta-robo/inicio" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix sunarp">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Alerta Robo SUNARP</h1>
                         <h3 class="featured__subtitle">Consulta de Vehículos Robados (SUNARP): Aunque muchas veces se integra en la consulta de SUNARP.</h3>
@@ -478,7 +507,7 @@
                     </article></a>
                     
                     <a href="https://recordconductor.mtc.gob.pe/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix mtc">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Sistema De Licencia de Conducir por puntos</h1>
                         <h3 class="featured__subtitle">Récord del Conductor (MTC): Útil si el vendedor es quien maneja, para ver su historial de puntos y comportamiento.</h3>
@@ -490,7 +519,7 @@
                     </article></a>
 
                     <a href="https://slcp.mtc.gob.pe/" target="_blank">
-                    <article class="featured__card mix">
+                    <article class="featured__card mix mtc">
                         <div class="shape shape__smaller"></div>
                         <h1 class="featured__title">Deuda de papeletas de infracción al tránsito</h1>
                         <h3 class="featured__subtitle">Para conocer el estado de deuda de sus papeletas de infracción al tránsito, según el Registro Nacional de Sanciones, visite: https://scppp.mtc.gob.pe</h3>
@@ -520,27 +549,29 @@
         <section class="logos section">
             <center><h1 class="home__title">Nuestra fuente de Información<br>, veraz y actualizada.</h1></center>
             <div class="logos__container container grid">
-             <!--  <div class="logos__content"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8sHwAxDRAWfghhLVaisJm1sTHwYDAHfvKg&s" alt="" class="logos__img"></div>-->  
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8sHwAxDRAWfghhLVaisJm1sTHwYDAHfvKg&s" alt="" class="featured__img">
-            <img src="https://preprod-apeseg.apeseg.org.pe/wp-content/uploads/2020/12/apeseg-logo-verde.png" alt="" class="featured__img">
-            <img src="https://www.placas.pe/assets/logos/SIIV-COLOR.png" alt="" class="featured__img">
-            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQFZ5IgLF-oxRQ/company-logo_200_200/company-logo_200_200/0/1631380140025/satlima_logo?e=1767225600&v=beta&t=N957ik1jWnYOWT75vzpYTws-Uiig8lciOtTvVrwFGJE" alt="" class="featured__img">
-            <img src="https://sigueloplus.sunarp.gob.pe/siguelo/assets/img/title_card_login.png" alt="" class="featured__img">
-            <img src="https://conoce-aqui.sunarp.gob.pe/conoce-aqui/assets/img/conoce-aqui-icon.svg" alt="" class="featured__img">
-            <img src="https://www.sat.gob.pe/websitev9/portals/0/img/logo_SAT.png" alt="" class="featured__img">
-            <img src="https://www.sutran.gob.pe/wp-content/uploads/2020/06/logo-blanco.png" alt="" class="featured__img">
-            <img src="https://webexterno.sutran.gob.pe/WebExterno/ImgCinemometro/logo.png" alt="" class="featured__img">
-            <img src="https://satt.gob.pe/images/portada/logo/logosatt.png" alt="" class="featured__img">
-            <img src="http://www.pit.gob.pe/pit2007/images/FotopitClick.jpg" alt="" class="featured__img">
-            <img src="https://www.sat.gob.pe/VirtualSAT/img/logo_Pitazo.png" alt="" class="featured__img">
-            <img src="https://rec.mtc.gob.pe/Content/Images/Con-punche-PERU-RGB_1.png" alt="" class="featured__img">
-            <img src="https://portal.mtc.gob.pe/images/logo.png" alt="" class="featured__img">
-            <img src="https://infogas.com.pe/wp-content/uploads/2023/09/Infogas-Logo.webp" alt="" class="featured__img">
-            <img src="https://www.policia.gob.pe/serviciospoliciales/img/logo3.png" alt="" class="featured__img">
-            <img src="https://alertarobo.sunarp.gob.pe/alerta-robo/assets/img/logo.png" alt="" class="featured__img">
-            <img src="https://alertarobo.sunarp.gob.pe/alerta-robo/assets/img/sunarp-black.svg" alt="" class="featured__img">
-            <img src="https://transitoytransporte.pe/wp-content/uploads/2023/07/cabecera-sistema-de-licencia-de-conducir-por-puntos.jpg" alt="" class="featured__img">
-            <img src="https://transitoytransporte.pe/wp-content/uploads/2023/07/cabecera-sistema-de-licencia-de-conducir-por-puntos.jpg" alt="" class="featured__img">
+            
+            <!--  <div class="logos__content"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8sHwAxDRAWfghhLVaisJm1sTHwYDAHfvKg&s" alt="" class="logos__img"></div>-->  
+            <div class="logos__content"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8sHwAxDRAWfghhLVaisJm1sTHwYDAHfvKg&s" class="featured__img"></div>
+            <div class="logos__content"><img src="https://preprod-apeseg.apeseg.org.pe/wp-content/uploads/2020/12/apeseg-logo-verde.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://servicios.sbs.gob.pe/reportesoat/Images/logo.jpg" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://www.placas.pe/assets/logos/SIIV-COLOR.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://media.licdn.com/dms/image/v2/C4E0BAQFZ5IgLF-oxRQ/company-logo_200_200/company-logo_200_200/0/1631380140025/satlima_logo?e=1767225600&v=beta&t=N957ik1jWnYOWT75vzpYTws-Uiig8lciOtTvVrwFGJE" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://sigueloplus.sunarp.gob.pe/siguelo/assets/img/title_card_login.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://conoce-aqui.sunarp.gob.pe/conoce-aqui/assets/img/conoce-aqui-icon.svg" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://www.sat.gob.pe/websitev9/portals/0/img/logo_SAT.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://www.sutran.gob.pe/wp-content/uploads/2020/06/logo-blanco.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://webexterno.sutran.gob.pe/WebExterno/ImgCinemometro/logo.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://satt.gob.pe/images/portada/logo/logosatt.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="http://www.pit.gob.pe/pit2007/images/FotopitClick.jpg" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://www.sat.gob.pe/VirtualSAT/img/logo_Pitazo.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://rec.mtc.gob.pe/Content/Images/Con-punche-PERU-RGB_1.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://portal.mtc.gob.pe/images/logo.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://infogas.com.pe/wp-content/uploads/2023/09/Infogas-Logo.webp" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://www.policia.gob.pe/serviciospoliciales/img/logo3.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://alertarobo.sunarp.gob.pe/alerta-robo/assets/img/logo.png" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://alertarobo.sunarp.gob.pe/alerta-robo/assets/img/sunarp-black.svg" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://transitoytransporte.pe/wp-content/uploads/2023/07/cabecera-sistema-de-licencia-de-conducir-por-puntos.jpg" alt="" class="featured__img"></div>
+            <div class="logos__content"><img src="https://transitoytransporte.pe/wp-content/uploads/2023/07/cabecera-sistema-de-licencia-de-conducir-por-puntos.jpg" alt="" class="featured__img"></div>
             </div>
         </section>
     </main>

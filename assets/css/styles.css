@@ -1138,7 +1138,7 @@ transform: scale(1.2);
     width: 2rem;
   }
   .featured__content{
-    grid-template-columns: repeat(3, 248px);
+    grid-template-columns: repeat(5, 248px);
     gap: 4rem;
   }
 
